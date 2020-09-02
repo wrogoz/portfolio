@@ -1,8 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-const Navigation = ()=>{
+const NavigationTest1 = ()=>{
     return(
+        <Header>
+        
+   
+         
+  
         <nav>
             <Ul>
             <li><Link to="/about">01/Projects</Link></li>
@@ -10,9 +15,21 @@ const Navigation = ()=>{
             <li><Link to="/about">03/Contact</Link></li>
         </Ul>
         </nav>
-        
+        </Header>
     )
 }
+const Header = styled.header`
+display:flex;
+align-items:center;
+justify-content:flex-end;
+   height:70%;
+   width:100%;
+   color:#fff;
+     
+
+   
+ 
+`
 const Ul = styled.ul`
     text-transform:uppercase;
     list-style:none;
@@ -47,4 +64,4 @@ const Ul = styled.ul`
         }
     }
 `
-export default Navigation
+export default NavigationTest1
