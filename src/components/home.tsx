@@ -46,6 +46,8 @@ background-image:url("${bgNoise}")
   
  `
  const NameSection =  styled.section`
+ display:flex;
+ align-items:flex-end;
     width:80%;
     height:30%;
     color:#fff;
