@@ -24,6 +24,6 @@ const Container = styled.div`
   width:100vw;
   height:100vh;
   background:#eaeaea;
-  font-family: 'Audiowide', cursive;
+  font-family: 'Michroma', sans-serif;
 `
 export default App;

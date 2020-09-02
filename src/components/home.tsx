@@ -7,7 +7,7 @@ const Home =()=>{
         <HomeContainer>
            
             <section>
-                FrontEnd Developer
+                FRONTEND +DEVELOPER
             </section>
             <section>
                 <div>Selected works</div>
