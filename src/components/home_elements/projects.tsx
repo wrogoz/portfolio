@@ -1,13 +1,33 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components'
-
-
+import Project from './projects_elements/project'
+import underContruction from '../../assets/images/underContruction.jpg'
 const Projects = ()=>{
     return(
         <ProjectsBox>
             <SectionName>
                 Selected works
             </SectionName>
+            <Project
+            projectNumber='01/'
+            projectImg={underContruction}
+            projectTitle="Medbase" />
+
+<Project
+            projectNumber='02/'
+            projectImg={underContruction}
+            projectTitle="Klinika laserowa" />
+
+<Project
+            projectNumber='03/'
+            projectImg={underContruction}
+            projectTitle="Architektura A+B" />
+
+<Project
+            projectNumber='04/'
+            projectImg={underContruction}
+            projectTitle="Weather App" />
+
         </ProjectsBox>
     )
 }

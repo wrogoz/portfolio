@@ -29,7 +29,7 @@ function App() {
 
 const Container = styled.div`
   width:100vw;
-  height:100vh;
+  min-height:100vh;
   background:#eaeaea;
   font-family: 'Michroma', sans-serif;
 `
