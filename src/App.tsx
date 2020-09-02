@@ -20,6 +20,6 @@ const Container = styled.div`
   width:100vw;
   height:100vh;
   background:pink;
-  font-family: 'michromaregular';
+  font-family: 'Audiowide', cursive;
 `
 export default App;

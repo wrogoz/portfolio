@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import bgNoise from '../images/bgNoise.gif'
+import Navigation from './navigation'
 const Home = ()=>{
     return(<HomeBackground>
         <HomeContainer>
@@ -8,7 +9,7 @@ const Home = ()=>{
         
           <Header>
           
-                  nawigacja
+            <Navigation/>
            
           </Header>
           <NameSection>
@@ -37,6 +38,9 @@ const HomeBackground = styled.div`
 background-image:url("${bgNoise}")
 `
  const Header = styled.header`
+ display:flex;
+ align-items:center;
+ justify-content:flex-end;
     height:70%;
     width:100%;
     color:#fff;
@@ -56,7 +60,10 @@ background-image:url("${bgNoise}")
     h1{
         display:flex;
         flex-direction:column;
-        margin-left:20px;
+        line-height: 0.85;
+        padding: 2rem 2rem 2rem 1rem;
+        letter-spacing: 2px;
+        font-size: 9.5vw;
     }
     
  `
