@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import GlobalFonts from "./assets/fonts/fonts";
 import { Route} from 'react-router-dom';
-
+import Intro from './components/intro'
 import Header from './components/header'
 import Home from './components/home'
 function App() {
@@ -11,9 +11,13 @@ function App() {
          <GlobalFonts />
 
          <Header/>
+      <Route path='/intro'>
+        <Intro/>
+      </Route>
       <Route path='/'>
         <Home/>
       </Route>
+     
       <footer>
           footer
       </footer>
