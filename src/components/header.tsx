@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import {Link} from 'react-router-dom'
 
 const Header = ()=>{
@@ -18,7 +18,7 @@ const Header = ()=>{
     )
 }
 const HeaderBox = styled.header`
-    font-size:0.7rem;
+    font-size:0.6rem;
     font-family: 'Montserrat', sans-serif;
     width:100%;
     padding:0 20px;
@@ -27,6 +27,15 @@ const HeaderBox = styled.header`
   
 
 `
+const underLineAnimation = keyframes`
+  from {
+    width:0;
+  }
+
+  to {
+    width:100%;
+  }
+`;
 const Nav = styled.nav`
     display:flex;
     align-items:center;
@@ -44,12 +53,12 @@ const Nav = styled.nav`
         width:100%;  
         height:1px;
         background-color:#202020;
-        transform-origin:left;
-        transition:transform 2s cubic-bezier(.19, 1, 0.22, 1);
-       
+      
         
+        animation:${underLineAnimation} 2s cubic-bezier(.19, 1, 0.22, 1);;
     }
 `
+
 const Logo = styled.div`
     font-family: 'Montserrat', sans-serif;
     width:25%;
