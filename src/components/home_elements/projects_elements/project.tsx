@@ -1,6 +1,6 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
-
+import styled from 'styled-components'
+import arrow from '../../../assets/images/arrow.png'
 interface ProjectProps{
     projectNumber:string
     projectImg:any
@@ -15,45 +15,38 @@ const Project = (props:ProjectProps)=>{
             </ProjectNum>
             <img src={props.projectImg} alt=""/>
             <ProjectTitle>{props.projectTitle}</ProjectTitle>
+            <ProjectDescription>
+                <span>&#8627;</span>
+                <div><p>tetete</p></div>
+            </ProjectDescription>
+            <ProjectUnderline/>
         </ProjectBox>
     )
 }
 
-const underLineAnimation = keyframes`
-  from {
-    width:0;
-  }
 
-  to {
-    width:100%;
-  }
-`;
 const ProjectBox = styled.div`
     display:flex;
     flex-direction:column;
     position: relative;
-    padding-bottom:1.5rem;
+    padding-top: 1rem;
     img{
         height:auto;
         width:100%;
         margin:0 auto;
     }
-    &:after{
-        content:"";
-        position:absolute;
-        bottom:0;
-        left:0;
+    `
+    const ProjectUnderline = styled.div`
         width:100%;  
         height:1px;
         background-color:#202020;
-      
+        margin-top:1.5rem;
         
-        animation:${underLineAnimation} 2s cubic-bezier(.19, 1, 0.22, 1);
-    }
 `
 const ProjectNum = styled.p`
     color:#fff;
     font-size:2rem;
+    padding-bottom: 0.5rem;
     `
 const ProjectTitle=styled.h2`
     text-align:center;
@@ -62,5 +55,13 @@ const ProjectTitle=styled.h2`
     padding-top: 1rem;
     letter-spacing: 4px;
 }
+`
+const ProjectDescription = styled.div`
+    display:flex;
+    justify-content:space-between;
+    img{
+        height:50px;
+        width:30px;
+    }
 `
 export default Project

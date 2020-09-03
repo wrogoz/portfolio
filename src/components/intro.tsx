@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import bgNoise from '../images/bgNoise.gif'
+import bgNoise from '../assets/images/bgNoise.gif'
+
 
 const Intro = ()=>{
     return(<IntroBackground>

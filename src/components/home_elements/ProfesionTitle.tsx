@@ -21,6 +21,7 @@ const ProfessionName = styled.h1`
     text-align:center;
     text-transform:uppercase;
     padding:2rem 0 6rem 0;
+   
 
 `
 
