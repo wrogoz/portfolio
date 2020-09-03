@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import arrow from '../../../assets/images/arrow.png'
+import arrow from '../../../assets/images/arrow2.png'
 interface ProjectProps{
     projectNumber:string
     projectImg:any
@@ -16,7 +16,7 @@ const Project = (props:ProjectProps)=>{
             <img src={props.projectImg} alt=""/>
             <ProjectTitle>{props.projectTitle}</ProjectTitle>
             <ProjectDescription>
-                <span>&#8627;</span>
+                <img src={arrow} alt="arrow"/>
                 <div><p>tetete</p></div>
             </ProjectDescription>
             <ProjectUnderline/>
@@ -59,9 +59,10 @@ const ProjectTitle=styled.h2`
 const ProjectDescription = styled.div`
     display:flex;
     justify-content:space-between;
+    font-size: 0.6rem;
+    align-items:center;
     img{
-        height:50px;
-        width:30px;
+       transform:rotate(180deg);
     }
 `
 export default Project
